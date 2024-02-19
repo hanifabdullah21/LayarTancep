@@ -1,7 +1,7 @@
 package com.praktisimengajar.layartancep.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.praktisimengajar.layartancep.R
 
 class LoginActivity : AppCompatActivity() {

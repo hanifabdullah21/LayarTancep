@@ -7,6 +7,19 @@
     android:padding="10dp"
     tools:context=".activity.LoginActivity">
 
+    <!--todo 1 : tambahkan file gambar (lihat slide 8)-->
+
+    <!--todo 2 : tambahkan ImageView, posisikan di paling atas-->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_logo_layar_tancep_full"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--todo 3 : sesuaikan agar berada dibawah logo-->
     <TextView
         android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
@@ -15,7 +28,7 @@
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -31,8 +44,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan nama"
+        android:background="@drawable/bg_edittext"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <!--todo 4 : Tambahkan TextView dan EditText untuk Passcode-->
+    <TextView
+        android:id="@+id/tv_passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Passcode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_name" />
+
+    <EditText
+        android:id="@+id/edt_passcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Passcode"
+        android:inputType="numberPassword"
+        android:background="@drawable/bg_edittext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_passcode" />
+
+    <!--todo 5 : Tambahkan Button-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="MASUK"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_passcode" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
