@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--todo 21 : Buat file menu untuk bottom navigation-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/img_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_fav"
+        android:icon="@drawable/img_favorite"
+        android:title="Favorite" />
+
+</menu>

@@ -1,11 +1,13 @@
 package com.praktisimengajar.layartancep.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.praktisimengajar.layartancep.MainActivity
 import com.praktisimengajar.layartancep.R
 
 class LoginActivity : AppCompatActivity() {
@@ -26,8 +28,12 @@ class LoginActivity : AppCompatActivity() {
         //todo 8.3 : berikan aksi pada tombol
         btnLogin.setOnClickListener {
             //todo 8.4 : tampilkan isi EditText pada logcat dan toast
-            Log.d("LOGIN", "onCreate: ${edtName.text} ${edtPasscode.text}")
-            Toast.makeText(this, "${edtName.text} ${edtPasscode.text}", Toast.LENGTH_SHORT).show()
+            //Log.d("LOGIN", "onCreate: ${edtName.text} ${edtPasscode.text}")
+            //Toast.makeText(this, "${edtName.text} ${edtPasscode.text}", Toast.LENGTH_SHORT).show()
+
+            //todo 15 : Pindah halaman ke MainActivity
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 }
